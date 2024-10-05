@@ -1,0 +1,90 @@
+name:                SimpleLanguage
+version:             0.1.0.0
+github:              "githubuser/SimpleLanguage"
+license:             BSD-3-Clause
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2024 Author name here"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/SimpleLanguage#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- text
+# - websockets
+- classy-prelude
+- mtl
+- containers
+- data-has
+- string-random
+- aeson
+- bytestring
+# - record-dot-preprocessor
+- record-hasfield
+- random
+- scotty # needs pkgs.zlib in default.nix
+- blaze-html
+- blaze-builder
+- cookie
+- http-types
+- wai
+- wai-extra
+- wai-middleware-static
+# - warp
+- time
+# # - conduit
+# # - extra
+# # - lens
+
+default-extensions:
+- NoImplicitPrelude
+- OverloadedStrings
+- NamedFieldPuns
+- ScopedTypeVariables
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  SimpleLanguage-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - SimpleLanguage
+
+tests:
+  SimpleLanguage-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - SimpleLanguage

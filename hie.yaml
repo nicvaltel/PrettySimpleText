@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:SimpleLanguage"
+
+    - path: "app/Main.hs"
+      component: "SimpleLanguage:exe:SimpleLanguage-exe"
+
+    - path: "test"
+      component: "SimpleLanguage:test:SimpleLanguage-test"
