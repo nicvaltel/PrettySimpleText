@@ -26,7 +26,7 @@ routes cachingStrategy = do
   middleware $ gzip $ def {gzipFiles = GzipCompress}
 
   let cachingOptions = MWMS.defaultOptions { cacheContainer = cachingStrategy }
-  middleware $ staticPolicyWithOptions cachingOptions (addBase "ui1/")
+  middleware $ staticPolicyWithOptions cachingOptions (addBase "ui/")
 
   WebRoutes.routes
 

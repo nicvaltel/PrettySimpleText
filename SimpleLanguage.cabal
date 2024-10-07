@@ -28,6 +28,7 @@ library
       Adapter.HTTP.API.Main
       Adapter.HTTP.API.Routes
       Adapter.HTTP.Main
+      Adapter.HTTP.Web.HtmlTemplates.ExampleIndexPage
       Adapter.HTTP.Web.Main
       Adapter.HTTP.Web.Routes
       Adapter.InMemory.Server
