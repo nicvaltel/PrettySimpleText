@@ -22,7 +22,6 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - text
-# - websockets
 - classy-prelude
 - mtl
 - containers
@@ -30,7 +29,6 @@ dependencies:
 - string-random
 - aeson
 - bytestring
-# - record-dot-preprocessor
 - record-hasfield
 - random
 - scotty # needs pkgs.zlib in default.nix
@@ -41,11 +39,9 @@ dependencies:
 - wai
 - wai-extra
 - wai-middleware-static
-# - warp
+- warp
 - time
-# # - conduit
-# # - extra
-# # - lens
+- lens
 
 default-extensions:
 - NoImplicitPrelude

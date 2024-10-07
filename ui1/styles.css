@@ -1,0 +1,168 @@
+/* Общие стили */
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /*background-color: #ffffff;*/
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+}
+
+header .logo h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контейнер */
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для основной части и сайдбара */
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+/* Основная колонка новостей */
+.news {
+  flex: 3;
+}
+
+.news-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.news-item h2 {
+  font-family: 'Georgia', serif;
+  font-size: 1.7rem;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.news-item p {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Правая колонка (sidebar) с вертикальной линией */
+.sidebar {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 1px solid #e0e0e0; /* Вертикальная серая линия */
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-section h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sidebar-section ul {
+  font-family: 'Georgia', serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-section ul li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-section ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.sidebar-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-section p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+
+/* Стили для футера */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .content-wrapper {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      margin-top: 20px;
+  }
+}

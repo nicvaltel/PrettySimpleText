@@ -1,7 +1,8 @@
 module Main (main) where
 
 import ClassyPrelude
-import Lib
+import qualified Application
 
 main :: IO ()
-main = someFunc
+main = do
+  Application.runApp 3000
