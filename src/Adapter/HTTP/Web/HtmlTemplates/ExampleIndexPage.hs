@@ -157,5 +157,3 @@ fullIndexPageExample = H.docTypeHtml $ do
       H.script ! A.src "/assets/js/skel.min.js" ! A.type_ "text/javascript" $ mempty
       H.script ! A.src "/assets/js/util.js" ! A.type_ "text/javascript" $ mempty
       H.script ! A.src "/assets/js/main.js" ! A.type_ "text/javascript" $ mempty
-
-    pure ()

@@ -4,11 +4,11 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 
-name:           SimpleLanguage
+name:           PrettySimpleText
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/SimpleLanguage#readme>
-homepage:       https://github.com/githubuser/SimpleLanguage#readme
-bug-reports:    https://github.com/githubuser/SimpleLanguage/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/PrettySimpleText#readme>
+homepage:       https://github.com/githubuser/PrettySimpleText#readme
+bug-reports:    https://github.com/githubuser/PrettySimpleText/issues
 author:         Author name here
 maintainer:     example@example.com
 copyright:      2024 Author name here
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/SimpleLanguage
+  location: https://github.com/githubuser/PrettySimpleText
 
 library
   exposed-modules:
@@ -29,6 +29,7 @@ library
       Adapter.HTTP.API.Routes
       Adapter.HTTP.Main
       Adapter.HTTP.Web.HtmlTemplates.ExampleIndexPage
+      Adapter.HTTP.Web.HtmlTemplates.Template
       Adapter.HTTP.Web.Main
       Adapter.HTTP.Web.Routes
       Adapter.InMemory.Server
@@ -37,9 +38,9 @@ library
       Lib
       Utils.Logger
   other-modules:
-      Paths_SimpleLanguage
+      Paths_PrettySimpleText
   autogen-modules:
-      Paths_SimpleLanguage
+      Paths_PrettySimpleText
   hs-source-dirs:
       src
   default-extensions:
@@ -73,12 +74,12 @@ library
     , warp
   default-language: Haskell2010
 
-executable SimpleLanguage-exe
+executable PrettySimpleText-exe
   main-is: Main.hs
   other-modules:
-      Paths_SimpleLanguage
+      Paths_PrettySimpleText
   autogen-modules:
-      Paths_SimpleLanguage
+      Paths_PrettySimpleText
   hs-source-dirs:
       app
   default-extensions:
@@ -88,7 +89,7 @@ executable SimpleLanguage-exe
       ScopedTypeVariables
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      SimpleLanguage
+      PrettySimpleText
     , aeson
     , base >=4.7 && <5
     , blaze-builder
@@ -113,13 +114,13 @@ executable SimpleLanguage-exe
     , warp
   default-language: Haskell2010
 
-test-suite SimpleLanguage-test
+test-suite PrettySimpleText-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_SimpleLanguage
+      Paths_PrettySimpleText
   autogen-modules:
-      Paths_SimpleLanguage
+      Paths_PrettySimpleText
   hs-source-dirs:
       test
   default-extensions:
@@ -129,7 +130,7 @@ test-suite SimpleLanguage-test
       ScopedTypeVariables
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      SimpleLanguage
+      PrettySimpleText
     , aeson
     , base >=4.7 && <5
     , blaze-builder
